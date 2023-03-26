@@ -5,7 +5,7 @@ const app=express();
 app.use(express.json());
 app.use(cors());
 const port=process.env.PORT || 4000;
-const url="mongodb+srv://anuj321:anuj321@cluster0.zzudzw1.mongodb.net/test";
+const url="mongodb+srv://anuj321:anuj321@cluster0.djoflib.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(url,{useNewUrlParser:true});
 const myschema=mongoose.Schema({
     name:String,
